@@ -18,4 +18,9 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose;
 
 # 4. Python3
 sudo add-apt-repository ppa:deadsnakes/ppa;
-sudo apt install -y build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev python3-pip python3-venv python-dev
+sudo apt install -y software-properties-common;
+sudo apt install -y python3.9 python3.9-venv;
+sudo apt install -y build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev libbz2-dev;
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py;
+python3.9 get-pip.py --user;
+
